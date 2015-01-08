@@ -1,0 +1,31 @@
+
+- var ht = 'http://html5beta.com'
+doctype html
+html
+	head
+		meta(charset='UTF-8')
+		title pinterest demos list
+		link(rel='stylesheet', href='#{host}/css/base.css')
+	body
+		#wrapper
+			h1.centered.w100.aligncenter.bg-blue.pdtb pinterest demos list
+			.centered
+				.pd-sec
+					.pd
+						h2 the new one
+						ul
+							li
+								a(href='#{host}/pinterest', target='_blank') #{host}/pinterest
+
+						h2 old demos, about two or three years ago
+						ul
+							li
+								a(href='#{ht}/demo/picroll/picroll1.html', target='_blank') #{ht}/demo/picroll/picroll1.html(no ajax)
+							li
+								a(href='#{ht}/demo/picroll/picroll2.html', target='_blank') #{ht}/demo/picroll/picroll2.html(no ajax)
+							li
+								a(href='#{ht}/demo/picroll/picroll3.html', target='_blank') #{ht}/demo/picroll/picroll3.html(no ajax)
+							li
+								a(href='#{ht}/demo/pinterest/', target='_blank') #{ht}/demo/pinterest/(mobile device only, ajax)
+
+

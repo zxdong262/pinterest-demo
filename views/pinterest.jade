@@ -1,0 +1,29 @@
+doctype html
+html
+	head
+		meta(charset='UTF-8')
+		title pinterest demo
+		link(rel='stylesheet', href='#{host}/css/base.css')
+	body
+		#wrapper
+			h1.w100.aligncenter.bg-blue.pdtb.color-white pinterest demo
+			.centered
+				#pics
+					- var item
+					- var len = res.length
+					- var i = 0
+					- for(;i < len;i ++)
+						- item = res[i]
+						span.img-wrap.block
+							span.pd-img.block
+								span.block
+									img.block(alt='loading image', src='#{item.imgPath}')
+								span.block.img-desc.bold.aligncenter #{item.title}
+					
+				#meta.aligncenter.bordert.pdtb
+		
+		script(src='#{host}/js/jquery-1.11.1.min.js')
+		script(src='#{host}/js/pin.js')
+
+
+
