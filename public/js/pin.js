@@ -129,7 +129,7 @@ $(function() {
 		else {
 			$('#pics .img-wrap').filter(function(index) {
 				return index % 3 == 0
-			}).wrapAll('<span class="three-col iblock c1" />')
+			}).wrapAll('<span class="three-col col c1" />')
 			$('#pics').children('.img-wrap').filter(':odd').wrapAll('<span class="three-col col c2" />')
 			$('#pics').children('.img-wrap').wrapAll('<span class="three-col col c3" />')
 		}
