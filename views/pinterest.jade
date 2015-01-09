@@ -8,18 +8,17 @@ html
 		#wrapper
 			h1.w100.aligncenter.bg-blue.pdtb.color-white pinterest demo
 			.centered
-				#pic-outer
-					#pics.fix
-						- var item
-						- var len = res.length
-						- var i = 0
-						- for(;i < len;i ++)
-							- item = res[i]
-							span.img-wrap.block
-								span.pd-img.block
-									span.block
-										img.block(alt='loading image', src='#{item.imgPath}')
-									span.block.img-desc.bold.aligncenter #{item.title}
+				#pics.fix
+					- var item
+					- var len = res.length
+					- var i = 0
+					- for(;i < len;i ++)
+						- item = res[i]
+						span.img-wrap.block
+							span.pd-img.block
+								span.block
+									img.block(alt='loading image', src='#{item.imgPath}')
+								span.block.img-desc.bold.aligncenter #{item.title}
 					
 				#meta.aligncenter.bordert.pdtb
 		
