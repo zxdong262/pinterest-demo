@@ -84,11 +84,11 @@ $(function() {
 			dom = '<span class="img-wrap block">' +
 							'<span class="pd-img block">' +
 								'<span class="block">' +
-				      		'<img class="block" alt="" src="' + item.imgPath + '" />' + 
-				      	'</span>' +
-				      	'<span class="block img-desc bold aligncenter">' + item.title + '</span>' +
-				      '</span>' +
-				    '</span>'
+									'<img class="block" alt="" src="' + item.imgPath + '" />' + 
+								'</span>' +
+								'<span class="block img-desc bold aligncenter">' + item.title + '</span>' +
+							'</span>' +
+						'</span>'
 			cols.eq(i%colsCount).append(dom)
 		}
 
@@ -128,7 +128,7 @@ $(function() {
 		}
 		else {
 			$('#pics .img-wrap').filter(function(index) {
-				return index % 3 == 0
+				return index % 3 === 0
 			}).wrapAll('<span class="three-col col c1" />')
 			$('#pics').children('.img-wrap').filter(':odd').wrapAll('<span class="three-col col c2" />')
 			$('#pics').children('.img-wrap').wrapAll('<span class="three-col col c3" />')
